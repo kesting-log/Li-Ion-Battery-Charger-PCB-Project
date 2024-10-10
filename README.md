@@ -28,7 +28,7 @@ the PMOS gate voltage is significacntly less than at the source of the PMOS, tur
 
 ### 3D PCB View
 - Below is a rendered 3D view of the PCB layout:
-  - ![3D PCB View](./PCB/3D PCB View/3D-view_Lithium-Ion Battery Charger.png)
+  - ![3D PCB View](./PCB/3D_PCB-view/3D-view_Lithium-Ion Battery Charger.png)
 
 ## File Structure
 - `/Diagrams`: Contains block diagrams and system-level designs.
