@@ -13,31 +13,49 @@ to charge an external device, the voltage decreases until it reaches 3V, where i
 is increased back to 5V via an output regulated boost converter. The output voltage is determined by two feedback resistors that make up a voltage divider, where the voltage across the lower resistor 
 (called the feedback voltage) is fed to a comparator within the IC. The feedback voltage is internally set to 1.24 V, allowing the output voltage to be set by the following equation:
 
-V_OUT = V_REF * (Rtop / Rbot + 1)
+Vout = Vref * (Rtop / Rbot + 1)
 
 Where:
-V_REF = 1.24V
+Vref = 1.24V
+Rbot ≤ 5kΩ
 
-The USB-C connector in the system has a 6-pin (power only) configuration and uses two pull-up 56k resistors on the CC pins to charge the external device at default power (5V @ 500mA). The CC pin voltage is also used to drive PMOS MOSFET gates. When the external device is not connected, the CC pin voltages are pulled up to 5V, preventing the PMOS from conducting to illuminate the LED. When an external device is connected
+In this application, Rtop = 9.1kΩ and Rbot = 3kΩ making the regulated output voltage of the boost converter Vout ≈ 5V.
+
+The USB-C connector in the system has a 6-pin (power only) configuration and uses two pull-up 56kΩ resistors on the CC pins to charge the external device at default power (5V @ 500mA). The CC pin voltage is also used to drive PMOS MOSFET gates. When the external device is not connected, the CC pin voltages are pulled up to 5V, preventing the PMOS from conducting to illuminate the LED. When an external device is connected
 the PMOS gate voltage is significacntly less than at the source of the PMOS, turning on the MOSFET and thus illuminating the LED. See the system schematic and PCB below for further reference.
 
 ## PCB Design
 ### KiCad Schematic
 - The KiCad schematic shows the electrical connections of the circuit.
-  - ![Schematic Screenshot](./Images/schematic-screenshot.png)
+  - ![Schematic Screenshot](./Schematic/Schematic_screenshot.png)
+
+### KiCad PCB
+- The KiCad PCB shows the physical connections and overall routing of traces in the circuit.
+  - ![PCB Screenshot](./PCB/KiCad_Files/PCB_screenshot.png)
 
 ### 3D PCB View
 - Below is a rendered 3D view of the PCB layout:
-  - ![3D PCB View](./PCB/3D_PCB-view/3D-view_Lithium-Ion Battery Charger.png)
+  - ![3D PCB View](./PCB/3D_PCB-view/3D-view_Lithium-Ion_Charger.png)
+
+### Bill of Materials (BOM)
+-  Below is the Bill of Materials, or the needed parts for the project:
+  - ![BOM Screenshot](./BOM/BOM_screenshot.png)
 
 ## File Structure
-- `/Diagrams`: Contains block diagrams and system-level designs.
-- `/KiCad`: KiCad project files, including schematics and PCB layouts.
-- `/Images`: 3D screenshots, renderings, and other visuals.
+- `/BOM`: Contains Bill of Materials for the project.
+- `/Diagrams`: Contains system-level block diagram of the project.
+- `/KiCad Project`: KiCad project file, including schematics and PCB layouts.
+- `/PCB`: Contains KiCad PCB file, a screenshot of the KiCad PCB design, and the 3D view of the PCB.
+- `/Schematic`: Contains KiCad schematic file and a screenshot of the KiCad Schematic design.
 
 ## How to Use
-1. Open the KiCad files from the `/KiCad` folder to review the schematic and PCB layout.
-2. For the system design, check out the block diagram in `/Diagrams`.
+1. Open the KiCad files from the `/PCB` and `/Schematic` folders to review the PCB layout and schematic.
+2. Open the KiCad project from the `/KiCad Project` folder to download the whole project including the PCB and schematic.
+3. For the system design, check out the block diagram in `/Diagrams`.
+4. For the Bill of Materials, navigate to the `/BOM` folder to see the specific components used in the project
 
 ## License
-Optional: If your work is open-source, include a license here (MIT, GPL, etc.).
+
+This hardware design is licensed under the **CERN Open Hardware License v2 - Strongly Reciprocal (CERN-OHL-S)**. You are free to use, modify, and share this project, as long as you distribute any derived works under the same license.
+
+For more details, see the [LICENSE](./LICENSE) file.
