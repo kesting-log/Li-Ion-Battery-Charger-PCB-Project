@@ -1,4 +1,6 @@
-# Lithium-Ion Battery Charger 
+# Lithium-Ion Battery Charger
+Rendered 3D view of the PCB Layout:
+ - ![3D PCB View](./PCB/3D_PCB-view/3D-view_Lithium-Ion_Charger.png)
 
 ## Overview
 This is a portable, self-iniated power electronics project for a custom PCB in KiCad. The module charges a low-voltage (3.7V nominal) lithium-ion battery from a DC/DC voltage regulator and discharges to an 
@@ -32,10 +34,6 @@ the PMOS gate voltage is significacntly less than at the source of the PMOS, tur
 ### KiCad PCB
 - The KiCad PCB shows the physical connections and overall routing of traces in the circuit.
   - ![PCB Screenshot](./PCB/KiCad_Files/PCB_screenshot.png)
-
-### 3D PCB View
-- Below is a rendered 3D view of the PCB layout:
-  - ![3D PCB View](./PCB/3D_PCB-view/3D-view_Lithium-Ion_Charger.png)
 
 ### Bill of Materials (BOM)
 -  Below is the Bill of Materials, or the needed parts for the project:
