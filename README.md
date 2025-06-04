@@ -3,7 +3,7 @@
   ![3D PCB View](./PCB/3D_PCB-view/3D-view_Lithium-Ion_Charger.png)
 
   Video of the Fabricated PCB Charging a Device:
-  ![Fabricated PCB Video](./PCB/Fabricated PCB/Lithium Battery Charger PCB Video.gif)
+  https://github.com/user-attachments/assets/34a2994c-56c9-4d0d-9e32-f9736337a1a2
 
 ## Overview
 This is a portable, self-iniated power electronics project for a custom PCB in KiCad. The module charges a low-voltage (3.7V nominal) lithium-ion battery from a DC/DC voltage regulator and discharges to an 
