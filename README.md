@@ -5,8 +5,6 @@
   Video of the Fabricated PCB Charging a Device:
 
   https://github.com/user-attachments/assets/34a2994c-56c9-4d0d-9e32-f9736337a1a2
-  
-  ![Fabricated PCB Video](./PCB/Fabricated_PCB/Lithium_Battery_Charger_PCB_Video.gif)
 
 ## Overview
 This is a portable, self-iniated power electronics project for a custom PCB in KiCad. The module charges a low-voltage (3.7V nominal) lithium-ion battery from a DC/DC voltage regulator and discharges to an 
@@ -49,7 +47,7 @@ the PMOS gate voltage is significacntly less than at the source of the PMOS, tur
 - `/BOM`: Contains Bill of Materials for the project.
 - `/Diagrams`: Contains system-level block diagram of the project.
 - `/KiCad Project`: KiCad project file, including schematics and PCB layouts.
-- `/PCB`: Contains KiCad PCB file, screenshot of the KiCad PCB design, video of the fabricated PCB charging a device, and the 3D view of the PCB.
+- `/PCB`: Contains KiCad PCB file, screenshot of the KiCad PCB design, and the 3D view of the PCB.
 - `/Schematic`: Contains KiCad schematic file and a screenshot of the KiCad Schematic design.
 
 ## How to Use
