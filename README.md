@@ -43,7 +43,7 @@ the PMOS gate voltage is significacntly less than at the source of the PMOS, tur
 - `/BOM`: Contains Bill of Materials for the project.
 - `/Diagrams`: Contains system-level block diagram of the project.
 - `/KiCad Project`: KiCad project file, including schematics and PCB layouts.
-- `/PCB`: Contains KiCad PCB file, a screenshot of the KiCad PCB design, and the 3D view of the PCB.
+- `/PCB`: Contains KiCad PCB file, a screenshot of the KiCad PCB design, a video of the fabricated PCB charging a device and the 3D view of the PCB.
 - `/Schematic`: Contains KiCad schematic file and a screenshot of the KiCad Schematic design.
 
 ## How to Use
