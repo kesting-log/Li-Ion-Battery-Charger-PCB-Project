@@ -27,7 +27,7 @@ Rbot ≤ 5kΩ
 
 In this application, Rtop = 9.1kΩ and Rbot = 3kΩ making the regulated output voltage of the boost converter Vout ≈ 5V.
 
-The USB-C connector in the system has a 6-pin (power only) configuration and uses two pull-up 56kΩ resistors on the CC pins to charge the external device at default power (5V @ 500mA). The CC pin voltage is also used to drive PMOS MOSFET gates. When the external device is not connected, the CC pin voltages are pulled up to 5V, preventing the PMOS from conducting to illuminate the LED. When an external device is connected
+The USB-C connector in the system has a 6-pin (power only) configuration and uses two pull-up 56kΩ resistors on the CC pins to charge the external device at default power (5V @ 500mA) - using the USB 2.0 protocol. The CC pin voltage is also used to drive PMOS MOSFET gates. When the external device is not connected, the CC pin voltages are pulled up to 5V, preventing the PMOS from conducting to illuminate the LED. When an external device is connected
 the PMOS gate voltage is significacntly less than at the source of the PMOS, turning on the MOSFET and thus illuminating the LED. See the system schematic and PCB below for further reference.
 
 ## PCB Design
